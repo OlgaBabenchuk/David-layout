@@ -1,0 +1,197 @@
+doctype html
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+html(lang="en")
+
+	head
+		include modules/head.pug
+	body
+		.overlay
+		header
+			.container
+				.row
+					.toggle-menu.hidden-md.hidden-lg.icon.-menu
+					.col-md-2.col-sm-2
+						a(href="#").logo David
+					.col-md-10.col-sm-10
+						nav.menu
+							ul
+								.toggle-close.icon.-close.hidden-md.hidden-lg
+								li.menu__item
+									a(href="#") Что входит в программу
+								li.menu__item
+									a(href="#") Почему сидеть вредно
+								li.menu__item
+									a(href="#") В каких случаях программа будет полезной
+								li.menu__item
+									a(href="#") Как все происходит
+								li.menu__item
+									a(href="#") Как работает методика David
+
+		section.intro-wpr
+			.intro
+				.container
+					.row
+						.col-md-8.col-sm-12
+							h2.intro__title Здоровье спины при малоподвижном образе жизни
+							p.intro__descr
+								|Занятия в ультрасовременных реабилитационных центрах David при Центре укрепления позвоночника и суставов под  наблюдением высококвалифицированной команды реабилитологов
+							p.intro__descr
+								|Помогает снять дискомфорт и хронические  боли в пояснице, грудном и шейном отделах позвоночника.
+							a.btn.btn-main(href="#") Записаться
+							a.btn.btn-main(href="#") Узнать больше о программе
+
+		section.green-sec
+			.container
+				.row.about-program
+					.col-md-6.col-sm-12
+						h3 Программа специально разработана для тех, кто:
+					.col-md-6.col-sm-12
+						ul
+							li Ведет малоподвижный образ жизни
+							li Чувствует дискомфорт в спине
+							li Проводит основную часть дня, сидя за компьютером или за рулем автомобиля
+							li Часто носит неудобную обувь
+							li Cтрадает бессонницей, головными болями
+							li Чувствует повышенную утомляемость и нервозность
+
+		section.slider-sec
+			.container
+				.row
+					.col-md-10.col-md-offset-1.col-sm-12
+						h2.block-title Что входит в программу?
+						p.block-descr
+							|Программа «Здоровье спины при малоподвижном образе жизни» – это комплекс занятий по финско-немецкой методике DAVID под наблюдением профессионального реабилитолога на современных медицинских тренажерах, оснащенных специальным компьютерным обеспечением. 
+						.slider-cont
+							ul.slider-main
+								li.slider-main__item.img-wrp
+									img(src="./img/slede-1.png")
+								li.slider-main__item.img-wrp
+									img(src="./img/slede-1.png")
+								li.slider-main__item.img-wrp
+									img(src="./img/slede-1.png")
+
+					.col-md-12
+						.program
+							ul
+								li Первичное компьютерное тестирование для диагностики силы, амплитуды и состояния мышечного корсета и суставов.
+								li Составление индивидуальной программы занятий, с учетом полученных результатов тестирования
+								li Курс занятий по уникальной в Украине финско-немецкой методике на медицинских компьютеризированных тренажерах
+								li Промежуточное и заключительное диагностическое исследование функций мышц и суставов, для контроля динамки положительного результата.
+								li Занятия проходят под обязательным контролем реабилитолога
+
+						.program-text
+							p Программу лечения в каждом конкретном случае составляет доктор во время первичной консультации.
+							p При наличии выраженных болей врач рекоменует курс лечения для снятия воспалительного процесса и отека и, после устранения острой боли специалисты разрабатывают индивидуальную программу занятий 
+		
+		section.statistics-sec
+			.statistics-sec-overlay
+				.container
+					.row
+						.col-md-10.col-md-offset-1.col-sm-12
+							h2.block-title Почему сидеть вредно?
+							p.block-descr
+								|Около 85% людей в мире ведут малоподвижный образ жизни
+							p.block-descr-thin Эта проблема является ключевой причиной различных заболеваний опорно-двигательного аппарата
+
+							ul.statistics-list#counts
+								li.statistics-list__item
+									.statistics-list__item-work.statistics-counter
+										.spincrement1(data-to="7.5").time-count 0
+										div часов
+									|Сидит на работе
+								li.statistics-list__item
+									.statistics-list__item-tv.statistics-counter
+										.spincrement2(data-to="1.5").time-count 0
+										div часа
+									|Смотрит телевизор
+								li.statistics-list__item
+									.statistics-list__item-comp.statistics-counter
+										.spincrement3(data-to="1.5").time-count 0
+										div часа
+									|Сидит за компьютером
+								li.statistics-list__item
+									.statistics-list__item-food.statistics-counter
+										.spincrement4(data-to="3").time-count 0
+										div часа
+									|Сидит, принимая пищу
+								li.statistics-list__item
+									.statistics-list__item-car.statistics-counter
+										.spincrement5(data-to="1.5").time-count 0
+										div часа
+									|Сидит в транспорте
+
+							.statistics-result
+								|Сидя, современный человек проводит в среднем <span>15 часов</span> в день! 
+							p.block-descr При сидении нагрузка на позвоночник возрастает в 11 раз
+							p.block-descr-thin 
+								|Когда человек садится, вся тяжесть тела ложится на позвоночник, провоцируя нарушение тонуса мышц и застой в тканях межпозвоночных дисков. Как результат – дискомфорт и болевые ощущения вдоль всего позвоночника.
+
+		section.recommend
+			.container
+				.row
+					h2.block-title В каких случаях программа будет полезной?
+					.row.recommend-block
+						.col-md-7.recommend__text
+							.recommend__number 1
+							.recommend__text-title Боли в пояснице
+							.recommend__text-announce
+								|Боли в поясничном отделе позвоночника связаны с его перенагрузкой в 80% случаев.  Сидя за компьютером, даже в очень удобном офисном кресле, нагрузка на поясничный отдел практически в 2 раза больше, чем в  положении стоя.
+							a(href="#").recommend__link Подробнее
+						.col-md-5.no-padding.recommend__img.img-wrp
+							img(src="img/backache.png")
+					.row.recommend-block
+						.col-lg-7.col-md-7.col-lg-push-5.recommend__text
+							.recommend__number 2
+							.recommend__text-title Боли в пояснице
+							.recommend__text-announce
+								|Боли в поясничном отделе позвоночника связаны с его перенагрузкой в 80% случаев.  Сидя за компьютером, даже в очень удобном офисном кресле, нагрузка на поясничный отдел практически в 2 раза больше, чем в  положении стоя.
+							a(href="#").recommend__link Подробнее
+						.col-lg-5.col-md-5.col-lg-pull-7.no-padding.recommend__img.img-wrp
+							img(src="./img/body-ache.png")
+					
+
+		section.method
+			.container
+				.row
+					.col-md-10.col-md-offset-1.col-sm-12
+					h2.block-title Как работает методика David?
+					.method-cont
+						.method-cont__img.wow.rollIn.center
+							img(src="./img/icon-90.png")
+						.method-cont__text.wow.bounceInRight(data-wow-duration="2s")
+							div Заметное снижение боли
+							p 90% пациентов отмечают значительное снижение боли и дискомфорта благодаря курсу лечения движением по финско-немецкой методике на компьютеризированных тренажерах.
+					.method-cont
+						.method-cont__img.wow.rollIn.center(data-wow-delay="1s")
+							img(src="./img/icon-self.png")
+						.method-cont__text.wow.bounceInRight(data-wow-duration="2s" data-wow-delay="1s")
+							div Заметное снижение боли
+							p 90% пациентов отмечают значительное снижение боли и дискомфорта благодаря курсу лечения движением по финско-немецкой методике на компьютеризированных тренажерах.
+					.method-cont
+						.method-cont__img.wow.rollIn.center(data-wow-delay="2s")
+							img(src="./img/icon-safe.png")
+						.method-cont__text.wow.bounceInRight(data-wow-duration="2s" data-wow-delay="2s")
+							div Заметное снижение боли
+							p 90% пациентов отмечают значительное снижение боли и дискомфорта благодаря курсу лечения движением по финско-немецкой методике на компьютеризированных тренажерах.
+					.method-cont
+						.method-cont__img.wow.rollIn.center(data-wow-delay="3s")
+							img(src="./img/icon-aim.png")
+						.method-cont__text.wow.bounceInRight(data-wow-duration="2s" data-wow-delay="3s")
+							div Заметное снижение боли
+							p 90% пациентов отмечают значительное снижение боли и дискомфорта благодаря курсу лечения движением по финско-немецкой методике на компьютеризированных тренажерах.
+
+		footer.footer
+			.container
+				.row
+					.col-md-12
+						span &copy; 2016 Институт вертебрологии и реабилитации
+
+
+
+
+
+
+		include modules/scripts.pug

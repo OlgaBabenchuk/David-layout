@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="myicons" horiz-adv-x="200">
+    <font-face font-family="myicons"
+      units-per-em="200" ascent="200"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="arrow_left"
+      unicode="&#xEA01;"
+      horiz-adv-x="200" d="M115.65 110.2L75.85 150.1L115.65 189.3L124.15 180.7L92.85 150L124.15 118.7z" />
+    <glyph glyph-name="arrow_right"
+      unicode="&#xEA02;"
+      horiz-adv-x="200" d="M68 117.857L68 105L132 150L68 195L68 182.143L116.001 150z" />
+    <glyph glyph-name="check"
+      unicode="&#xEA03;"
+      horiz-adv-x="200" d="M126.26565 175.12501L89.42185 138.28128L72.92185 151.46868L66.67185 143.65628L86.67185 127.65628L90.17185 124.87498L93.32815 128.03128L133.32815 168.0313L126.26565 175.125z" />
+    <glyph glyph-name="close"
+      unicode="&#xEA04;"
+      horiz-adv-x="200" d="M195 173.4000000000001L173.4000000000001 195L100 121.5999999999999L26.5999999999999 195L5 173.4000000000001L78.4000000000001 100L5 26.5999999999999L26.5999999999999 5L100 78.4000000000001L173.4000000000001 5L195 26.5999999999999L121.5999999999999 100z" />
+    <glyph glyph-name="menu"
+      unicode="&#xEA05;"
+      horiz-adv-x="200" d="M6.25 193.75H43.75V156.25H6.25V193.75zM156.25 193.75H193.75V156.25H156.25V193.75zM81.25 193.75H118.75V156.25H81.25V193.75zM6.25 118.75H43.75V81.25H6.25V118.75zM6.25 43.75H43.75V6.25H6.25V43.75zM156.25 43.75H193.75V6.25H156.25V43.75zM156.25 118.75H193.75V81.25H156.25V118.75zM81.25 118.75H118.75V81.25H81.25V118.75zM81.25 43.75H118.75V6.25H81.25V43.75z" />
+  </font>
+</defs>
+</svg>
