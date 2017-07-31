@@ -62,10 +62,6 @@ header {
 		font-size: 2em;
 		z-index: 30;
 	}
-
-	@include MQ(M) {
-		display: block;
-	}
 }
 
 .logo {
@@ -82,26 +78,11 @@ header {
 		text-decoration: none;
 		color: $color-2;
 	}
-
-	@include MQ(ML) {
-		font-size: 2.3em;
-		line-height: 80px;
-	}
 }
 
 .menu {
 	position: relative;
 	z-index: 50;
-
-	@include MQ(M) {
-		position: fixed;
-		top: 0;
-		right: 0;
-		background-color: $color-3;
-		z-index: 30;
-		transform: translateX(150%);
-		visibility: hidden;
-	}
 }
 
 .toggle-close {	
@@ -120,14 +101,6 @@ header {
 	list-style: none;
 	vertical-align: middle;
     line-height: 4em;
-
-    @include MQ(M) {
-		display: block;
-		width: 300px;
-		height: 100vh;
-		padding-top: 3.5em;
-		line-height: 3em;
-	}
 }
 
 .menu__item {
@@ -144,18 +117,6 @@ header {
 			color: $color-3;
 			text-decoration: none;
 		}
-
-		@include MQ(ML) {
-			font-size: 0.7em;
-			padding: 0.4em;
-		}
-		@include MQ(M) {
-			display: block;
-			font-size: 0.7em;
-			padding: 0.4em 1.5em;
-			color: $color-1;
-			letter-spacing: 1px;
-		}
 	}
 	
 	&:before {
@@ -168,25 +129,12 @@ header {
 		height: 4px;
 		border-radius: 50%;
 		background-color: $color-2;
-
-		@include MQ(M) {
-			display: none;			
-		}
 	}
 
 	&:first-child:before {
-		display: none;
-		
-	}
-
-	@include MQ(SM) {
-		display: block;
+		display: none;		
 	}
 }
-
-
-
-
 
 /*----------------------------------------------------------------------------------------
 |                              HEADER END                                                 |
@@ -218,23 +166,6 @@ header {
 	background: linear-gradient(to right, rgba(217,239,215,1) 0%, rgba(217,239,215,1) 25%, rgba(215,239,215,0.57) 43%, rgba(246,41,12,0) 100%), url('../img/bg-1.png') no-repeat;
 	background-position: right;
 	z-index: 0;
-	
-
-	@include MQ(ML) {
-		background-position-x: (150%);
-	}
-	@include MQ(M) {
-		background-position-x: (220%);
-	}
-	@include MQ(SM) {
-		background-position: right;
-	}
-	@include MQ(S) {
-		padding: 0;
-		height: 700px;
-		background-size: cover;
-		background-position-x: (40%);
-	}
 }
 
 .intro {
@@ -244,16 +175,6 @@ header {
 	top: 0;
 	left: 0;
 	padding: 5em 0;
-
-	@include MQ(M) {
-		background-color: rgba(255, 255, 255, 0.6);
-	}
-	@include MQ(SM) {
-		padding: 3em 0;
-	}
-	@include MQ(S) {
-		padding: 0;
-	}
 }
 
 .intro__title {
@@ -280,11 +201,7 @@ header {
 	font-weight: 700;
 	text-transform: uppercase;
 	border-radius: 3px;
-	background-color: transparent;
-
-	@include MQ(S) {
-		padding: 1em 1.2em;
-	}
+	background-color: transparent;	
 }
 
 .btn-main {
@@ -292,18 +209,13 @@ header {
 	margin-right: 1.8em;
 	border: 2px solid $color-3;
 	color: $color-3;
-	transotion: 0.5s;
+	transition: 0.5s;
 
 	&:hover {
 		color: $color-1;
 		background-color: $color-3;
 		border-color: $color-3;
-		transotion: 0.5s;
-	}
-
-	@include MQ(S) {
-		margin-top: 1em;
-		margin-right: 1em;
+		transition: 0.5s;
 	}
 }
 
@@ -324,10 +236,6 @@ header {
 
 	ul {
 		list-style: none;
-
-		@include MQ(SM) {
-			text-align: left;
-		}	
 	}
 
 	li {
@@ -353,12 +261,6 @@ header {
 			transition: 0.5s;
 		}
 	}
-
-	@include MQ(SM) {
-		display: block;
-		padding: 2em 0;
-		text-align:  center;
-	}
 }
 /*----------------------------------------------------------------------------------------
 |                              INTRO SECTION END                                          |
@@ -372,10 +274,6 @@ header {
 .recommend {
 	padding: 70px 0;
 	text-align: center;
-
-	@include MQ(SM) {
-		padding: 30px 0;
-	}
 }
 
 .block-title {
@@ -411,10 +309,6 @@ header {
 
 	.slick-dots {
 	    bottom: 46px;
-
-	    @include MQ(M) {
-			bottom: 0;
-		}
 	}
 
 	.slick-dots li button:before {
@@ -425,18 +319,10 @@ header {
 		background-color: transparent;
 		border: 1px solid $color-1;
 		opacity: 1;
-
-		@include MQ(M) {
-			border: 1px solid $color-3;
-		}
 	}
 
 	.slick-dots li.slick-active button:before {
 		background-color: $color-1;
-
-		@include MQ(M) {
-			background-color: $color-3;
-		}
 	}
 
 	.slick-prev, .slick-next {
@@ -467,53 +353,16 @@ header {
 		    	}
 			}
 	    }
-
-	    @include MQ(ML) {
-			top: 99%;
-		}
-		@include MQ(M) {
-			width: 30px;
-			height: 30px;
-			border-color: transparent;
-			top: 98%;
-		}
 	}
 
 	.slick-prev {
 		top: 50%;
-	    left: -100px;
-	
-		@include MQ(M) {
-			left: 34%;
-			top: 98%;
-		}
-		@include MQ(SM) {
-			left: 28%;
-		}
-		@include MQ(S) {
-			left: 25%;
-			top: 97%;
-		}
+	    left: -100px;		
 	}
 
 	.slick-next {
 	    right: -100px;
-	    transform: rotateY(180deg);
-
-	    @include MQ(ML) {
-	     	top: 44%;
-		}
-		@include MQ(M) {
-	     	top: 95%;
-			left: 62%;
-		}
-		@include MQ(SM) {
-			left: 66%;
-			top: 95%;
-		}
-		@include MQ(S) {
-			top: 93%;
-		}
+	    transform: rotateY(180deg);	    
 	}
 
 	.slick-prev:before,
@@ -527,25 +376,6 @@ header {
 	    color: $color-3;
 	    opacity: 1;
 	    overflow: hidden;
-
-	    @include MQ(M) {
-			left: -10px;
-		    top: 7%;
-		    font-size: 49px;
-		}
-	}
-
-	@include MQ(ML) {
-		height: 35em;
-	}
-	@media only screen and (max-width: 610px) {
-		height: 30em;
-	}
-	@include MQ(SM) {
-		height: 35em;
-	}
-	@include MQ(S) {
-		height: 25em;
 	}
 }
 
@@ -556,13 +386,6 @@ header {
 
 	img {
 		width: 100%;
-	}
-
-	@include MQ(M) {
-		height: 32em;
-	}
-	@include MQ(S) {
-		height: 22em;
 	}
 }
 
@@ -577,11 +400,6 @@ header {
 		column-count: 2;
 		list-style: none;		
 		text-align:  left;
-
-		@include MQ(SM) {
-			padding-left: 1em;
-			column-count: 1;
-		}
 	}
 
 	li {
@@ -633,13 +451,6 @@ header {
 	background-position: center;
 	background-size: 135%;
 	background-attachment: fixed;
-
-	@include MQ(SM) {
-		height: 92em;
-		background-size: cover;
-		background-position: 50% 70%;
-		background-attachment: local;
-	}
 }
 
 .statistics-sec-overlay {
@@ -656,10 +467,6 @@ header {
 	.block-descr-thin {
 		color: $color-1;
 	}
-
-	@include MQ(M) {
-		padding: 30px 0;
-	}
 }
 
 .statistics-list {
@@ -673,37 +480,18 @@ header {
 	padding-left: 0;
 	width: 100%;
 	height: auto;
-
-	@include MQ(M) {
-		margin: 1.5em 0 1em;
-	}
-	@include MQ(SM) {
-		display: block;
-	}
 }
 
 .statistics-list__item {
 	display: inline-block;
 	width: 18%;
 	color: $color-3;
-
-	@include MQ(SM) {
-		width: 48%;
-	}
-	@include MQ(S) {
-		width: 100%;
-		margin-bottom: 2em;
-	}
 }
 
 .statistics-counter {
 	width: 6em;
 	height: 9em;
 	padding-top: 2.2em;
-
-	@include MQ(SM) {
-		margin: 0 auto;
-	}
 }
 
 .statistics-list__item-work {
@@ -757,10 +545,6 @@ header {
 	span {
 		font-size: 1.9em;
 	}
-
-	@include MQ(M) {
-		font-size: 1.3em;
-	}
 }
 
 /*----------------------------------------------------------------------------------------
@@ -777,10 +561,6 @@ header {
 
 .recommend-block {
 	margin-bottom: 3em;
-
-	@include MQ(M) {
-		position: relative;
-	}
 }
 
 .recommend__text {
@@ -788,10 +568,6 @@ header {
 	padding: 6em 5em 1em;
 	text-align: left;
 	color: $color-5;
-
-	@include MQ(ML) {
-		padding: 3em 2em 1em;
-	}
 }
 
 .recommend__number {
@@ -803,14 +579,6 @@ header {
 	font-size: 14em;
 	font-weight: 700;
 	z-index: -1;
-
-	@include MQ(ML) {
-		left: 0.1em;
-	}
-	@include MQ(SM) {
-		font-size: 8em;
-		left: 0.35em;
-	}
 }
 
 .recommend__text-title {
@@ -855,25 +623,6 @@ header {
 	width: 30em;
 	height: 30em;
 	overflow: hidden;
-
-	@include MQ(ML) {
-		width: 24em;
-		height: 24em;
-	}
-	@include MQ(M) {
-		position: absolute;
-		top: 0;
-		right: 2em;
-		width: 10em;
-		height: 7em;
-	}
-	@include MQ(S) {
-		position: absolute;
-		top: 0;
-		right: 2em;
-		width: 6em;
-		height: 6em;
-	}
 }
 /*----------------------------------------------------------------------------------------
 |                              RECOMEND SECTION END                                       |
@@ -891,10 +640,6 @@ header {
 	align-items: center;
 	width: 80%;
 	margin: 0 auto 2em;
-
-	@include MQ(SM) {
-		width: 90%;
-	}
 }
 
 .method-cont__img {
@@ -905,11 +650,6 @@ header {
 
 	img {
 		width: 100%;
-	}
-
-	@include MQ(SM) {
-		width: 80px;
-		height: 80px;
 	}
 }
 
@@ -927,11 +667,307 @@ header {
 	p {
 		font-size: 1em;
 	}
-
-	@include MQ(SM) {
-		width: 100%;
-	}
 }
 /*----------------------------------------------------------------------------------------
 |                                METHOD SECTION END                                       |
+-----------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------
+|                                MEDIA START                                              |
+-----------------------------------------------------------------------------------------*/
+@include MQ(ML) {
+
+	.logo {
+		font-size: 2.3em;
+		line-height: 80px;
+	}
+
+	.menu__item a {
+		font-size: 0.7em;
+		padding: 0.4em;
+	}
+
+	.intro-wpr {
+		background-position-x: (150%);
+	}
+
+	.slider-main {
+		height: 35em;
+	}
+
+	.slider-main .slick-next {
+     	top: 44%;
+	}
+
+	.recommend__text {
+		padding: 3em 2em 1em;
+	}
+
+	.recommend__number {
+		left: 0.1em;
+	}
+
+	.recommend__img {
+		width: 24em;
+		height: 24em;
+	}	
+}
+
+@include MQ(M) {
+
+	header {
+		display: block;
+	}
+
+	.menu {
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: $color-3;
+		z-index: 30;
+		transform: translateX(150%);
+		visibility: hidden;
+	}
+
+	.menu ul {
+		display: block;
+		width: 300px;
+		height: 100vh;
+		padding-top: 3.5em;
+		line-height: 3em;
+	}
+
+	.menu__item a {
+		display: block;
+		font-size: 0.7em;
+		padding: 0.4em 1.5em;
+		color: $color-1;
+		letter-spacing: 1px;
+	}
+
+	.menu__item:before {
+		display: none;
+	}
+
+	.intro {
+		background-color: rgba(255, 255, 255, 0.6);
+	}
+
+	.intro-wpr {
+		background-position-x: (220%);
+	}
+
+	.slider-main__item {
+		height: 32em;
+	}
+
+	.slider-main .slick-dots {
+		bottom: 0;
+	}
+
+	.slider-main .slick-dots li button:before {
+		border: 1px solid $color-3;
+	}
+
+	.slider-main .slick-dots li.slick-active button:before {
+		background-color: $color-3;
+	}
+
+	.slider-main .slick-prev, 
+	.slider-main .slick-next {
+		width: 30px;
+		height: 30px;
+		border-color: transparent;
+		top: 98%;
+	}
+
+	.slider-main .slick-prev:before,
+	.slider-main .slick-next:before {
+		left: -10px;
+	    top: 7%;
+	    font-size: 49px;
+	}
+
+	.slider-main .slick-next {
+     	top: 95%;
+		left: 62%;
+	}
+
+	.slider-main  .slick-prev {
+		left: 34%;
+		top: 98%;
+	}
+
+	
+
+	.statistics-sec-overlay {
+		padding: 30px 0;
+	}
+
+	.statistics-list {
+		margin: 1.5em 0 1em;
+	}
+
+	.statistics-result {
+		font-size: 1.3em;
+	}
+
+	.recommend-block {
+		position: relative;
+	}
+
+	.recommend__img {
+		position: absolute;
+		top: 0;
+		right: 2em;
+		width: 10em;
+		height: 7em;
+	}	
+}
+
+@media only screen and (max-width: 610px) {
+	.slider-main  {
+		height: 30em;
+	}
+}
+
+@include MQ(SM) {
+
+	.menu__item {
+		display: block;
+	}
+
+	.intro {
+		padding: 3em 0;
+	}
+
+	.intro-wpr {
+		background-position: right;
+	}
+
+	.slider-main {
+		height: 35em;
+	}
+
+	.slider-main .slick-next {
+		left: 66%;
+		top: 95%;
+	}
+
+	.slider-main  .slick-prev {
+		left: 28%;
+	}
+	
+
+	.about-program {
+		display: block;
+		padding: 2em 0;
+		text-align:  center;
+	}
+
+	.about-program ul {
+		text-align: left;
+	}
+
+	.slider-sec, .method, .recommend {
+		padding: 30px 0;
+	}
+
+	.program ul {
+		padding-left: 1em;
+		column-count: 1;
+	}
+
+	.statistics-sec {
+		height: 92em;
+		background-size: cover;
+		background-position: 50% 70%;
+		background-attachment: local;
+	}
+
+	.statistics-list {
+		display: block;
+	}
+
+	.statistics-list__item {
+		width: 48%;
+	}
+
+	.statistics-counter {
+		margin: 0 auto;
+	}
+	
+	.recommend__number {
+		font-size: 8em;
+		left: 0.35em;
+	}
+
+	.method-cont {
+		width: 90%;
+	}
+
+	.method-cont__img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.method-cont__text {
+		width: 100%;
+	}
+}
+
+@include MQ(S) {
+
+	.intro {
+		padding: 0;
+	}
+
+	.intro-wpr {
+		padding: 0;
+		height: 700px;
+		background-size: cover;
+		background-position-x: (40%);
+	}
+
+	.btn {
+		padding: 1em 1.2em;
+	}
+
+	.btn-main {
+		margin-top: 1em;
+		margin-right: 1em;
+	}
+
+	.slider-main {
+		height: 25em;
+	}
+
+	.slider-main .slick-next {
+		top: 93%;
+	}
+
+	.slider-main  .slick-prev {
+		left: 25%;
+		top: 97%;
+	}
+
+	.slider-main__item {
+		height: 22em;
+	}
+
+	.statistics-list__item {
+		width: 100%;
+		margin-bottom: 2em;
+	}
+
+	.recommend__img {
+		position: absolute;
+		top: 0;
+		right: 2em;
+		width: 6em;
+		height: 6em;
+	}
+}
+/*----------------------------------------------------------------------------------------
+|                                MEDIA  END                                               |
 -----------------------------------------------------------------------------------------*/
