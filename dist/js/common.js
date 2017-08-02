@@ -19,7 +19,7 @@ $(document).ready(function() {
  
         if(w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
             $(".spincrement1, .spincrement2, .spincrement3, .spincrement5").spincrement({
-            	decimalPlaces: 1,       // Сколько знаков оставлять после запятой
+            	decimalPlaces: 1,      			  // Сколько знаков оставлять после запятой
 				decimalPoint: ",",
                 duration: 2000
             });
@@ -32,18 +32,20 @@ $(document).ready(function() {
     });
 
 
+
+/* settings for cutting img  */ 
     var wow = new WOW(
 	  {
-	    boxClass:     'wow',      // animated element css class (default is wow)
-	    animateClass: 'animated', // animation css class (default is animated)
-	    offset:       0,          // distance to the element when triggering the animation (default is 0)
-	    mobile:       true,       // trigger animations on mobile devices (default is true)
-	    live:         true,       // act on asynchronously loaded content (default is true)
+	    boxClass:     'wow',
+	    animateClass: 'animated',
+	    offset:       0,
+	    mobile:       true,
+	    live:         true,
 	    callback:     function(box) {
 	      // the callback is fired every time an animation is started
 	      // the argument that is passed in is the DOM node being animated
 	    },
-	    scrollContainer: true // optional scroll container selector, otherwise use window
+	    scrollContainer: true 
 	  }
 	);
 	wow.init();
@@ -93,62 +95,7 @@ $(document).ready(function() {
 		infinite: true,
 		slidesToScroll: 1,
 		slidesToShow: 1,
-		// responsive: [
-	 //    {
-		// 	breakpoint: 992,
-		// 	settings: {
-		// 		arrows: true,
-		// 		centerMode: true,
-		// 		centerPadding: '50px',
-		// 		slidesToShow: 3
-		// 	}
-	 //    },
-	 //    {
-	 //      breakpoint: 768,
-	 //      settings: {
-	 //        arrows: true,
-	 //        centerMode: true,
-	 //        centerPadding: '100px',
-	 //        slidesToShow: 1
-	 //      }
-	 //    },
-	 //    {
-	 //      breakpoint: 480,
-	 //      settings: {
-	 //        arrows: true,
-	 //        centerMode: true,
-	 //        centerPadding: '50px',
-	 //        slidesToShow: 1
-	 //      }
-	 //    }
-	 //  ]
 	});
-
-
-	
-	// $(".prev_button").on("click", function(){
-	// 	owl.trigger("owl.prev");
-	// });
-	  
-
-
-
-	// settings for cutting img in slider
-	// $(window).on('load', function(){
-	// 	$('.slider-top__item').each(fu)
-	// });
-
-
-
-
-	// $('.options__nav li').on('click', function() {
-	// 	if(!($(this).hasClass('active'))); {
-	// 		$(this).siblings().removeClass('active');
-
-	// 		$(this).addClass('active'); 
-	// 	}
-		
-	// });
 
 });
 

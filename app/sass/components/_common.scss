@@ -40,6 +40,7 @@ h3 {
 	background-color: rgba(255, 255, 255, 0.6);
 	z-index: 10;
 	transition: 0.3s;
+	overflow-x: hidden; 
 }
 
 /*----------------------------------------------------------------------------------------
@@ -879,8 +880,7 @@ header {
 	.statistics-sec {
 		height: 92em;
 		background-size: cover;
-		background-position: 50% 70%;
-		background-attachment: local;
+		background-attachment: fixed;
 	}
 
 	.statistics-list {
@@ -955,7 +955,7 @@ header {
 
 	.statistics-list__item {
 		width: 100%;
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 
 	.recommend__img {
@@ -964,6 +964,21 @@ header {
 		right: 2em;
 		width: 6em;
 		height: 6em;
+	}
+
+	.statistics-list__item {
+	    width: 49%;
+	    font-size: 0.9em;
+	    vertical-align: top;
+	}
+
+	.statistics-counter {
+	    width: 4em;
+	    height: 7em;
+	}
+
+	.time-count {
+	    font-size: 1.25em;
 	}
 }
 /*----------------------------------------------------------------------------------------
